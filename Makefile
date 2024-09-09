@@ -31,7 +31,7 @@ hf-login:
 
 push-hub:
 	huggingface-cli upload jcairel/Drug-Classification ./App --repo-type=space --commit-message="Sync App files"
-	huggingface-cli upload jcairel/Drug-Classification ./Model /Model --repo-type=space --commit-message="Sync Model"
-	huggingface-cli upload jcairel/Drug-Classification ./Results /Metrics --repo-type=space --commit-message="Sync Model"
+	huggingface-cli upload jcairel/Drug-Classification ./Model --repo-type=space --commit-message="Sync Model"
+	huggingface-cli upload jcairel/Drug-Classification ./Results --repo-type=space --commit-message="Sync Model"
 
 deploy: hf-login push-hub
